@@ -25,3 +25,7 @@ const displayData = (data) => {
 };
 
 fetchNasaApodData();
+
+document.addEventListener('contextmenu', (e) => {
+	e.preventDefault();
+});

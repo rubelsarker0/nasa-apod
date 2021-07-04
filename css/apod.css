@@ -16,12 +16,13 @@ h1 {
 }
 
 .card {
-	margin: 20px auto;
+	margin: 10px auto;
 	box-shadow: 0 6px 8px 0 rgb(0 0 0 / 20%);
 	transition: 0.3s;
-	width: 50%;
 }
-
+.card img {
+	height: 560px;
+}
 .card:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -34,9 +35,21 @@ h5.image-title {
 p.image-explanation {
 	font-family: emoji;
 	text-align: justify;
+	font-size: 18px;
 }
 
 p.image-date {
 	font-family: emoji;
+	font-size: 18px;
 	text-align: justify;
+	color: gray;
+}
+
+@media screen and (max-width: 768px) {
+	.card {
+		width: 100%;
+	}
+	.card img {
+		height: 100%;
+	}
 }
